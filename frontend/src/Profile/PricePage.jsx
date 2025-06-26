@@ -6,7 +6,7 @@ export default function PricePage({contactRef, handleScroll}) {
     return (<>
         <Navbar value='Log out'contactRef={contactRef} handleScroll={handleScroll}/>
         <div className='min-h-[100vh]'>
-            <title>Price | Lopuh</title>
+            <title>Price | Dipluv</title>
             <nav className="w-[100%] h-11 mt-8 justify-items-center">
                 <ul className="flex border rounded-3xl bg-gray-900">
                     <Link to='/dentists'><li className="px-8 py-2 rounded-3xl text-amber-50 cursor-pointer font-medium hover:bg-gray-800">Dentists</li></Link>

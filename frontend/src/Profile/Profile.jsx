@@ -13,7 +13,7 @@ export default function Profile({contactRef, handleScroll}){
 	
 	return (<>
         <Navbar value='Log out' contactRef={contactRef} handleScroll={handleScroll}/>
-        <title>Doctors | Lopuh</title>
+        <title>Dentists | Dipluv</title>
         <nav className="w-[100%] h-11 mt-8 justify-items-center">
             <ul className="flex border rounded-3xl bg-gray-900">
                 <Link to='/dentists'><li className="border px-8 py-2 rounded-3xl bg-amber-50 cursor-pointer font-medium hover:bg-gray-200">Dentists</li></Link>

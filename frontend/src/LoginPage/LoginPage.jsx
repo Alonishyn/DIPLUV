@@ -9,8 +9,8 @@ return (
     <>
         <Navbar value='Register'/>
         <div className="justify-items-center border-2 border-gray-700/40 rounded-2xl mt-20 ml-[35%] w-[30%] h-105 content-">
-	  	    <title>Login | D+</title>
-            <p className="text-[35px] text-gray-700 font-medium mt-10 mb-10">Login to D+</p>
+	  	    <title>Login | Dipluv</title>
+            <p className="text-[35px] text-gray-700 font-medium mt-10 mb-10">Login to Dipluv</p>
         
             <form action='http://localhost:8000/token/' method='post'>
                 <label className="ml-6" >

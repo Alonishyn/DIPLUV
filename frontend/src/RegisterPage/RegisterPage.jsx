@@ -4,8 +4,8 @@ export default function RegisterPage() {
     return (<>
         <Navbar value='Login'/>
         <div className="justify-items-center border-2 border-gray-700/40 rounded-2xl mt-10 ml-[35%] w-[30%] h-120 content-">
-	  	    <title>Register | D+</title>
-            <p className="text-[35px] text-gray-700 font-medium mt-10 mb-10">Register to D+</p>
+	  	    <title>Register | Dipluv</title>
+            <p className="text-[35px] text-gray-700 font-medium mt-10 mb-10">Register to DIPLUV</p>
         
             <form >
                 <label className="ml-6" >
