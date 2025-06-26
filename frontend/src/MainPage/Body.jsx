@@ -10,8 +10,8 @@ export default function BodyMainPage() {
                 <img className='h-75 rounded-lg' src={Image} alt="foto" />
             </div>
             <div className="h-[100%] w-[38%] text-center content-center">
-                <h1 className='font-medium text-gray-700 text-2xl mb-3' >D+ DENTAL – professional dental care</h1>
-                <p className="text-gray-500">The main principle of the D+ Dental clinic is a comprehensive individual approach to each patient: we do not just treat a “sick” tooth, we create a detailed personal program, starting with diagnostics using advanced technologies and involving specialists of various dental profiles to solve the problems posed by the diagnostics.</p>
+                <h1 className='font-medium text-gray-700 text-2xl mb-3' >DIPLUV DENTAL – professional dental care</h1>
+                <p className="text-gray-500">The main principle of the Dipluv Dental clinic is a comprehensive individual approach to each patient: we do not just treat a “sick” tooth, we create a detailed personal program, starting with diagnostics using advanced technologies and involving specialists of various dental profiles to solve the problems posed by the diagnostics.</p>
                 <Link to='/login'><button className='bg-gray-950 text-amber-50 mt-7 font-medium w-25 h-8 rounded hover:bg-gray-800 cursor-pointer'>Sign up</button></Link>
             </div>
         </div>

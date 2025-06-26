@@ -34,7 +34,7 @@ export default function Navbar(props) {
     return (<>
         <div className="flex h-15 w-full bg-gray-900">
             <div className="w-[75%]">
-                <h1 className="cursor-default text-amber-50 text-4xl font-bold mt-1.5 ml-4"><Link to='/'>D+</Link></h1>
+                <h1 className="cursor-default text-amber-50 text-4xl font-bold mt-2.5 ml-4"><Link to='/'>DIPLUV</Link></h1>
             </div>
             <div className="flex w-[25%] gap-[10%]">
                 <h1 className=" text-amber-50 text-[20px] font-medium pt-3.5 pl-15 cursor-pointer" onClick={props.handleScroll}>Contact us</h1>
