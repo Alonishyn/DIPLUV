@@ -60,12 +60,17 @@ app = FastAPI()
 
 origins = [
     "http://localhost:5173",
-    "http://localhost:5173/"
+    "http://127.0.0.1:5173",
+    "http://217.154.24.69",
+    "http://217.154.24.69/",
+    "http://dipluv.com/",
+    "http://dipluv.com",
+    
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[origins],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -139,13 +144,13 @@ async def login_for_access_token(
 ) -> Token:
     user = authenticate_user(fake_users_db, form_data.username, form_data.password)
     if not user:
-        return RedirectResponse(url='http://localhost:5173/login', status_code=302)
+        return RedirectResponse(url='http://217.154.24.69/login', status_code=302)
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
     )
     userData.update({"logedIn": True})
-    return RedirectResponse(url='http://localhost:5173/dentists', status_code=302) 
+    return RedirectResponse(url='http://217.154.24.69/dentists', status_code=302) 
 
 
 
