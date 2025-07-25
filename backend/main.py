@@ -64,8 +64,7 @@ origins = [
     "http://217.154.24.69",
     "http://217.154.24.69/",
     "http://dipluv.com/",
-    "http://dipluv.com",
-    
+    "http://dipluv.com"
 ]
 
 app.add_middleware(
