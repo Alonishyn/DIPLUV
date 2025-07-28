@@ -3,9 +3,9 @@ import Navbar from "../MainPage/Navbar";
 export default function RegisterPage() {
     return (<>
         <Navbar value='Login'/>
-        <div className="justify-items-center border-2 border-gray-700/40 rounded-2xl mt-10 ml-[35%] w-[30%] h-120 content-">
+        <div className="justify-items-center border-2 border-gray-700/40 rounded-2xl mt-10 xl:ml-[35%] ml-[16%] xl:w-[30%] w-[67%] xl:h-120 h-110 content-">
 	  	    <title>Register | Dipluv</title>
-            <p className="text-[35px] text-gray-700 font-medium mt-10 mb-10">Register to DIPLUV</p>
+            <p className="text-[35px] text-gray-700 font-medium xl:mt-10 mt-6 mb-10">Register to Dipluv</p>
         
             <form >
                 <label className="ml-6" >
@@ -22,7 +22,7 @@ export default function RegisterPage() {
                 </label>
                 <input  name="password" type="password" className="ml-5 py-[5px] px-[20px] w-[90%] mb-[16px] border-1 border-gray-300 rounded hover:border-blue-500" placeholder="Password" autoComplete="current-password" />
 
-                <div className="rounded-[20px] bg-gray-900 hover:bg-gray-700 active:bg-gray-800 w-[25%] h-10 content-center mt-[10%] ml-[38%] pl-3.5">
+                <div className="rounded-[20px] bg-gray-900 hover:bg-gray-700 active:bg-gray-800 xl:w-[25%] w-[30%] h-10 content-center mt-[10%] xl:ml-[38%] ml-[35%] xl:pl-3.5 pl-3 ">
                     <input type="submit" value="Register" className="text-amber-50 font-medium text-[20px]" />
                 </div>
             </form>

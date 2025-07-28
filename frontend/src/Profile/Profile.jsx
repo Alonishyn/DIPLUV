@@ -7,7 +7,7 @@ import Footer from "../Footer";
 export default function Profile({contactRef, handleScroll}){
     const {data} = useSuspenseQuery({
 		queryKey: ["dentists"],
-		queryFn: () => fetch("/api/doctors").then(response => response.json())
+		queryFn: () => fetch("http://localhost:8000/api/doctors").then(response => response.json())
 	});
 
 	
@@ -24,14 +24,14 @@ export default function Profile({contactRef, handleScroll}){
         {data.map((dat, index) => {
             if(index % 2 === 0) {
                 return (<>
-                    <div className="h-[80vh]">
-                        <div className=" mt-5 flex w-full h-89 pt-6">
-                            <div className="w-[50%] justify-items-center">
-                                <img src={`data:image/jpeg;base64,${dat.image.image_data}`} alt="foto" className="h-60 rounded-lg border-1 border-gray-900/25" />
+                    <div className="xl:h-[80vh] h-[110vh]">
+                        <div className=" mt-5 xl:flex w-full h-89 pt-6">
+                            <div className="xl:w-[50%] justify-items-center">
+                                <img src={`data:image/jpeg;base64,${dat.image.image_data}`} alt="foto" className="xl:h-60 h-55 xl:w-100 rounded-lg border-1 border-gray-900/25" />
                                 <p className="text-4xl mt-5 font-medium text-gray-900">{dat.firstName} {dat.lastName}</p>
                             </div>
-                            <div className="w-[42%] border-2 rounded-lg border-gray-900/15 ">
-                                <h1 className="text-[23px] font-semibold pl-2 mt-3 text-gray-700">Diploma:</h1>
+                            <div className="xl:w-[42%] w-[95%] xl:h-85 h-70 ml-2.5 mt-5 border-2 rounded-lg border-gray-900/15 justify-items-center">
+                                <h1 className="text-[23px] font-semibold pl-2 xl:mt-3 text-gray-700">Diploma:</h1>
                                 <p className="pl-4 text-gray-500">{dat.diplomas}</p>
                                 <h1 className="text-[23px] font-semibold pl-2 mt-5 text-gray-700">Experience:</h1>
                                 <p className="pl-4 text-gray-500">{dat.experience}</p>
@@ -43,13 +43,13 @@ export default function Profile({contactRef, handleScroll}){
                 </>)
             } else {
                 return (<>
-                    <div className="h-[85vh] bg-gray-950">
-                        <div className=" flex w-full h-89 pt-20">
-                            <div className="w-[50%] justify-items-center">
-                                <img src={`data:image/jpeg;base64,${dat.image.image_data}`} alt="foto" className="h-60 rounded-lg border-1 border-gray-900/25" />
+                    <div className="xl:h-[85vh] h-[110vh] bg-gray-950">
+                        <div className=" xl:flex w-full h-89 pt-10">
+                            <div className="xl:w-[50%] justify-items-center">
+                                <img src={`data:image/jpeg;base64,${dat.image.image_data}`} alt="foto" className="xl:h-60 h-55 xl:w-100 rounded-lg border-1 border-gray-900/25" />
                                 <p className="text-4xl mt-5 font-medium text-amber-50">{dat.firstName} {dat.lastName}</p>
                             </div>
-                            <div className="w-[42%] border-2 rounded-lg border-amber-50/60 ">
+                            <div className="xl:w-[42%] w-[95%] xl:h-85 h-70 ml-2.5 mt-5 border-2 rounded-lg border-amber-50/60 justify-items-center">
                                 <h1 className="text-[23px] font-semibold pl-2 mt-3 text-amber-50">Diploma:</h1>
                                 <p className="pl-4 text-gray-200">{dat.diplomas}</p>
                                 <h1 className="text-[23px] font-semibold pl-2 mt-5 text-amber-50">Experience:</h1>
