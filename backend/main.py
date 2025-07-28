@@ -20,8 +20,8 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 
 fake_users_db = {
-    "lonishyn_a": {
-        "username": "lonishyn_a",
+    "testuser": {
+        "username": "testuser",
         "full_name": "Artem Lonishyn",
         "email": "johndoe@example.com",
         "hashed_password": "$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW",
@@ -60,7 +60,12 @@ app = FastAPI()
 
 origins = [
     "http://localhost:5173",
-    "http://localhost:5173/"
+    "http://localhost:5173/",
+    "http://127.0.0.1:5173",
+    "http://217.154.24.69",
+    "http://217.154.24.69/",
+    "http://dipluv.it/",
+    "http://dipluv.it"
 ]
 
 app.add_middleware(
