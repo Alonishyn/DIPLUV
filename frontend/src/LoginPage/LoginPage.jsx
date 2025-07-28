@@ -1,12 +1,13 @@
 import Navbar from '../MainPage/Navbar'
 import ErrorMessage from '../ErrorMessage'
 
+
 export default function LoginPage() {
 
 return (
     <>
         <Navbar value='Register'/>
-        <div className="justify-items-center border-2 border-gray-700/40 rounded-2xl mt-20 xl:ml-[35%] ml-[16%] xl:w-[30%] w-[67%] xl:h-105 h-95">
+        <div className="justify-items-center border-2 border-gray-700/40 rounded-2xl mt-20 ml-[35%] w-[30%] h-105 content-">
 	  	    <title>Login | Dipluv</title>
             <p className="text-[35px] text-gray-700 font-medium mt-10 mb-10">Login to Dipluv</p>
         
@@ -21,7 +22,7 @@ return (
                 </label>
                 <input  name="password" type="password" className="ml-5 py-[5px] px-[20px] w-[90%] mb-[16px] border-1 border-gray-300 rounded hover:border-blue-500" placeholder="Password" autoComplete="current-password" />
                 <ErrorMessage/>
-                <div className="rounded-[20px] bg-gray-900 hover:bg-gray-700 active:bg-gray-800 w-[25%] h-10 content-center mt-[10%] ml-[38%]  xl:pl-6 pl-4">
+                <div className="rounded-[20px] bg-gray-900 hover:bg-gray-700 active:bg-gray-800 w-[25%] h-10 content-center mt-[10%] ml-[38%] pl-6">
                     <input type="submit" value="Login" className="text-amber-50 font-medium text-[20px]" />
                 </div>
             </form>

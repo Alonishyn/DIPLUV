@@ -6,7 +6,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 export default function MainPage({contactRef, handleScroll}) {
     const {data} = useSuspenseQuery({
 		queryKey: ["users"],
-		queryFn: () => fetch("http://localhost:8000/api/user").then(response => response.json())
+		queryFn: () => fetch("/api/user").then(response => response.json())
 	});
 
     if(data.logedIn === true){

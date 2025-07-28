@@ -20,8 +20,8 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 
 fake_users_db = {
-    "testuser": {
-        "username": "testuser",
+    "lonishyn_a": {
+        "username": "lonishyn_a",
         "full_name": "Artem Lonishyn",
         "email": "johndoe@example.com",
         "hashed_password": "$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW",
@@ -59,7 +59,6 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173",
     "http://localhost:5173/",
     "http://127.0.0.1:5173",
     "http://217.154.24.69",
@@ -70,7 +69,7 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[origins],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -144,13 +143,13 @@ async def login_for_access_token(
 ) -> Token:
     user = authenticate_user(fake_users_db, form_data.username, form_data.password)
     if not user:
-        return RedirectResponse(url='http://localhost:5173/login', status_code=302)
+        return RedirectResponse(url='http://dipluv.it/login', status_code=302)
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
     )
     userData.update({"logedIn": True})
-    return RedirectResponse(url='http://localhost:5173/dentists', status_code=302) 
+    return RedirectResponse(url='http://dipluv.it/dentists', status_code=302) 
 
 
 
