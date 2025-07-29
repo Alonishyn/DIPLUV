@@ -4,7 +4,7 @@ import { useMutation } from "@tanstack/react-query";
 export default function Navbar(props) {
     const mutation = useMutation({
 		mutationFn: async data => {
-			const response = await fetch("/api/user", {
+			const response = await fetch("http://localhost:8000/api/user", {
                 method: "PUT",
                 body: JSON.stringify(data)
             });

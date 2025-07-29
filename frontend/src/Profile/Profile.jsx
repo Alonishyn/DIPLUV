@@ -7,7 +7,7 @@ import Footer from "../Footer";
 export default function Profile({contactRef, handleScroll}){
     const {data} = useSuspenseQuery({
 		queryKey: ["dentists"],
-		queryFn: () => fetch("/api/doctors").then(response => response.json())
+		queryFn: () => fetch("http://localhost:8000/api/doctors").then(response => response.json())
 	});
 
 	

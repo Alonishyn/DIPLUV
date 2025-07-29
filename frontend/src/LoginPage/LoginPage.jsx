@@ -10,7 +10,7 @@ return (
 	  	    <title>Login | Dipluv</title>
             <p className="text-[35px] text-gray-700 font-medium mt-10 mb-10">Login to Dipluv</p>
         
-            <form action='/token/' method='post'>
+            <form action='http://localhost:8000/token/' method='post'>
                 <label className="ml-6" >
                     Username<span className=" text-red-600">*</span>:
                 </label>
