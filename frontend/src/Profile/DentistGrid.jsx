@@ -20,7 +20,7 @@ const DentistGrid = () => {
 
   return (
     <div className="px-10 py-16 max-w-screen-2xl mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:gap-100 gap-10">
         {doctors.map((doc, index) => (
           <DentistCard
             key={index}

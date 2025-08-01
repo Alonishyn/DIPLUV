@@ -4,7 +4,7 @@ const DentistCard = ({ image, firstName, lastName, diplomas, experience, courses
   const fullName = `${firstName} ${lastName}`;
 
   return (
-    <div className="flex flex-col bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-2 hover:shadow-xl h-full">
+    <div className="flex flex-col bg-white rounded-2xl shadow-lg p-6 transition-transform hover:-translate-y-2 hover:shadow-xl h-full w-[390px] xl:w-[370px]">
       <img
         src={`data:${image.content_type};base64,${image.image_data}`}
         alt={fullName}
