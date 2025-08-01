@@ -9,7 +9,7 @@ export default function BodyMainPage() {
   Trusted by hundreds for professional and gentle dental care.
 </h2>
         <div className="xl:flex w-[100%] xl:h-110 xl:mt-0.5 mt-3">
-            <div className="h-[100%] xl:w-[50%] place-items-center content-center">
+            <div className="h-[100%] xl:w-[50%] place-items-center place-content-center justify-center">
                 <img data-aos="zoom-in" className='xl:h-85 h-65 rounded-lg' src={Image} alt="foto" />
             </div>
             <div className="h-[100%] xl:w-[38%] w-[90%] text-center content-center ml-4 mt-5">
@@ -20,7 +20,7 @@ export default function BodyMainPage() {
             </div>
         </div>
         <div className="xl:flex w-[100%] h-[100vh] mt-3 bg-gray-950">
-            <div className="xl:h-[100%] h-[50%] xl:w-[50%] place-items-center content-center mt-5 pt-5">
+            <div className="xl:h-[100%] h-[50%] xl:w-[50%] place-items-center place-content-center justify-center mt-5 pt-5">
                 <img data-aos="zoom-in" className='xl:h-85 h-65 rounded-lg' src={Image1} alt="foto" />
             </div>
             <div className="xl:h-[100%] h-[50%] xl:w-[38%] w-[90%] ml-6 text-center xl:content-center mt-8">

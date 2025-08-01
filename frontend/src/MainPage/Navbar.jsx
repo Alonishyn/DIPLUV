@@ -36,9 +36,9 @@ export default function Navbar(props) {
             <div className="w-[40%] xl:w-[75%]">
                 <h1 className="cursor-default text-amber-50 text-4xl font-bold mt-3.5 ml-4"><Link to='/'>DIPLUV</Link></h1>
             </div>
-            <div className="flex w-[60%] xl:w-[25%] gap-[12%]">
-                <h1 className=" text-amber-50 text-[20px] font-medium pt-5 pl-6 xl:pl-10 cursor-pointer" onClick={props.handleScroll}>Contact us</h1>
-                <button className="text-amber-50 border-amber-50 hover:bg-gray-700 border-2 rounded pt-0.5 pb-7 pl-4 pr-4 mb-3 mt-4 text-[20px] font-medium cursor-pointer" onClick={handleLogin}>{props.value}</button>
+            <div className="flex w-[60%] xl:w-[25%] xl:gap-[12%] gap-[8%] lg:items-center lg:place-content-center items-center place-content-center">
+                <h1 className=" text-amber-50 xl:text-[20px] text-[16px] font-medium pl-15 xl:pl-10 cursor-pointer" onClick={props.handleScroll}>Contact us</h1>
+                <button className="text-amber-50 border-amber-50 hover:bg-gray-700 border-2 rounded pl-4 pr-4 pb-1 xl: xl:text-[20px] text-[16px] font-medium cursor-pointer" onClick={handleLogin}>{props.value}</button>
             </div>
         </div>
     </>)
